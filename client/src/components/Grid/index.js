@@ -7,7 +7,7 @@ export default function Grid() {
 
 	useEffect(() => {
 		populateSignedRequest();
-	});
+	}, []);
 
 	const populateSignedRequest = () => {
 		getRefreshSignedRequest().then((data) => {
